@@ -57,8 +57,20 @@
 }
 
 @media (max-width: 980px){
+
+    .container nav{
+        padding-top: 0;
+    }
+    .navbar{
+        padding: 35px 100px;
+    }
+
     .nav-logo{
         margin: 0 50px;
+    }
+
+    .nav-link::after{
+        bottom: -35px;
     }
 
     .line{
@@ -98,6 +110,10 @@
         background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
     }
 
+    .container nav{
+        padding-top: 30px;
+    }
+
     .navbar{
         padding: 25px 50px;
     }
@@ -111,7 +127,7 @@
         text-align: center;
         place-items: center;
         top: 120px;
-        gap: 30px;
+        gap: 100px;
     }
     .main-content{
         justify-content: center;
