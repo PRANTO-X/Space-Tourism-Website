@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/responsive_style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="nav-logo">
+        <img src="/starter-code/assets/shared/logo.svg" alt="">
+        <div class="line"></div>
+      </div>
+      
+      <div class="nav-btn">
+        <div>
+          <span class="line-1"></span>
+          <span class="line-2"></span>
+          <span class="line-3"></span>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="nav-item">
+          <a href="" class="nav-link active">00 <span>home</span></a>
+          <a href="" class="nav-link">01 <span>destination</span></a>
+          <a href="" class="nav-link">02 <span>crew</span></a>
+          <a href="" class="nav-link">03 <span>technology</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+     <div class="main-body">
+      <div class="main-content">
+        <div class="heading">so,you want to travel to</div>
+        <div class="title">space</div>
+        <div class="text">
+          Let’s face it; if you want to go to space, 
+          you might as well genuinely go to outer space and not hover kind of on the edge of it.
+          Well sit back, and relax because we’ll give you a truly out of this world experience!
+        </div>
+      </div>
+
+      <button class="main-btn">explore</button>
+     </div>
+    </main>
+  </div>
+
+  <script>
+    document.querySelector('.nav-btn').addEventListener("click",()=>{
+      document.querySelector('.nav-btn').classList.toggle('open');
+      document.querySelector('.navbar').classList.toggle('show');
+
+    })
+  </script>
+</body>
+</html>
