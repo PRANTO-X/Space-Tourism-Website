@@ -132,7 +132,7 @@
 
     /* destination */
     #destination{
-        background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+        background-image: url(../starter-code/assets/destination/background-destination-tablet.jpg);
         height: 100%;
     }
 
@@ -154,7 +154,7 @@
 
 @media (max-width: 855px){
     .container{
-        background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+        background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
     }
 
     .container nav{
@@ -225,7 +225,7 @@
 
 @media (max-width: 500px){
     .container{
-        background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+        background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
     }
 
     .nav-logo{
@@ -293,6 +293,9 @@
     }
 
     /* destination */
+    #destination{
+        background-image: url(../starter-code/assets/destination/background-destination-mobile.jpg);
+    }
     .destination-body{
         margin-top: 50px;
         gap: 50px;
