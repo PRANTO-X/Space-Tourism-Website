@@ -5,33 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/CSS/design_system_style.css">
+  <link rel="stylesheet" href="/CSS/destination_style.css">
+  <link rel="stylesheet" href="/CSS/responsive_style.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <section class="container" id="destination">
+    <nav>
+      <div class="nav-logo">
+        <img src="/starter-code/assets/shared/logo.svg" alt="">
+        <div class="line"></div>
+      </div>
+      
+      <div class="nav-btn">
+        <div>
+          <span class="line-1"></span>
+          <span class="line-2"></span>
+          <span class="line-3"></span>
+        </div>
+      </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+      <div class="navbar">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link">00 <span>home</span></a>
+          <a href="/starter-code/destination-moon.html" class="nav-link active">01 <span>destination</span></a>
+          <a href="/starter-code/crew-commander.html" class="nav-link">02 <span>crew</span></a>
+          <a href="/starter-code/technology-vehicle.html" class="nav-link">03 <span>technology</span></a>
+        </div>
+      </div>
+    </nav>
 
-  01 Pick your destination
+    <div class="caption"><span>01</span> pick your destination</div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <main id="destination-main">
 
-  Moon
+      <div class="destination-body">
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+        <img src="" alt="" id="planet-image" class="res-img">
 
-  Avg. distance
-  384,400 km
+        <div class="destination-content">
 
-  Est. travel time
-  3 days
+          <div class="destination-item">
+            <a href="" class="destination-link active">moon</a>
+            <a href="" class="destination-link">mars</a>
+            <a href="" class="destination-link">europa</a>
+            <a href="" class="destination-link">titan</a>
+          </div>
+
+          <div class="destination-detail">
+            <div class="planet" id="name"></div>
+            <div class="text-2" id="description"></div>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="info-container">
+            <div class="info">
+              <div class="info-title" >avg. distance</div>
+              <div class="data" id="distance"></div>
+            </div>
+            <div class="info">
+              <div class="info-title">est. travel time</div>
+              <div class="data" id="travel"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </section>
+
+
+
+
+
+<script type="module" src="/JS/main.js"></script>
 </body>
 </html>
