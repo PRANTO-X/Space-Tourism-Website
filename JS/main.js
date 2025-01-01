@@ -24,7 +24,7 @@ document.querySelectorAll('.destination-link').forEach(link => {
   
   let updateDestination = (name) => {
     const destinationBody = document.querySelector('.destination-body');
-  
+    if(!destinationBody) return;
     // Fade out
     destinationBody.classList.add('hidden');
   
@@ -59,3 +59,37 @@ document.querySelectorAll('.destination-link').forEach(link => {
   updateDestination('Moon');
   
 
+// crew
+let updateCrew = (role) => {
+  let crewBody = document.querySelector('.crew-body');
+  if(!crewBody) return;
+  crewBody.classList.add('hidden');
+  setTimeout(() => {
+    let crew = data.crew.find((e) => e.role.toLowerCase() === role.toLowerCase());
+    if (crew) {
+      document.querySelector('.role').textContent = crew.role;
+      document.querySelector('.crew-name').textContent = crew.name;
+      document.querySelector('#crew-image').src = crew.images.png;
+      document.querySelector('#crew-image').alt = crew.name;
+      document.querySelector('.bio').textContent = crew.bio;
+
+      crewBody.classList.remove('hidden');
+    }
+  }, 500);
+};
+
+let bullets = document.querySelectorAll('.bullets span');
+
+bullets.forEach((bullet) => {
+  bullet.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log("Clicked role:", e.target.getAttribute('role')); 
+    bullets.forEach((b) => b.classList.remove('active')); 
+    e.target.classList.add('active'); 
+    let role = e.target.getAttribute('role');
+    updateCrew(role);
+  });
+});
+
+
+updateCrew('commander');
