@@ -1,0 +1,25 @@
+#crew{
+    background-image: url(../starter-code/assets/crew/background-crew-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.crew-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+.crew-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.role{
+    font-size: 32px;
+    color: var(--white);
+    opacity: 50.42%;
+    text-transform: uppercase;
+}

@@ -5,23 +5,25 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     height: 100vh;
-    position: relative;
 }
 
 .main-body{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    position: absolute;
-    top: 350px;
-    gap: 180px;
+    grid-template-columns: 2fr 1fr;
+    gap: 200px;
+    margin-top: 280px;
 }
 
 .main-content{
     display: flex;
     flex-direction: column;
     text-align: start;
+    align-self: start;
+    justify-content: start;
     text-transform: uppercase;
+    gap: 20px;
 }
 
 
@@ -29,6 +31,7 @@
     font-size: 32px;
     background: var(--white);
     color: var(--secondary-color);
+    font-family: var(--text-bellefair);
     border-radius: 50%;
     border: none;
     outline: none;

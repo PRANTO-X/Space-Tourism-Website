@@ -4,26 +4,43 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: relative;
 }
 
-
 .destination-body{
-    margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
     gap: 100px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .destination-body img{
     opacity: 0.8;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .destination-content{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    opacity: 1;
+
+}
+
+.destination-body.hidden{
+    opacity: 0;
 }
 
 .destination-item{
@@ -35,6 +52,7 @@
 
 .destination-link{
     font-size: 16px;
+    font-family: var(--text-barlow-condensed);
     color: var(--primary-color);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -61,6 +79,7 @@
 .planet{
     font-size: 96px;
     color: var(--white);
+    font-family: var(--text-bellefair);
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -81,13 +100,15 @@
 
 .info-title{
     font-size: 14px;
+    font-family: var(--text-barlow-condensed);
     color: var(--primary-color);
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 .data{
     font-size: 28px;
+    font-family: var(--text-bellefair);
     color: var(--white);
     text-transform: uppercase;
 }

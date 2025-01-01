@@ -1,4 +1,4 @@
-@media (max-width: 1500px) {
+@media (max-width: 1550px) {
     .navbar{
         padding: 25px 80px;
     }
@@ -7,16 +7,18 @@
       width: 90%;
     }
     main{
-        width: 1000px;
+        width: 1050px;
     }
     .main-body{
-        top: 300px;
+        margin-top: 250px;
         gap: 120px;
     }
 
     /* destination */
+    #destination-main{
+        gap: 100px;
+    }
     .destination-body{
-        margin-top: 150px;
         gap: 150px;
     }
 }
@@ -34,6 +36,7 @@
     }
 
     .main-body{
+        margin-top: 280px;
         gap: 90px;
     }
 
@@ -63,13 +66,21 @@
     }
 
     /* destination */
+    #destination-main{
+        gap: 90px;
+        margin-top: 40px;
+    }
+    
+    .destination-body{
+        grid-template-columns: 1fr 2fr;
+    }
+    
     .destination-content{
         gap: 20px;
     }
 }
 
-@media (max-width: 980px){
-
+@media (max-width: 990px){
     .container nav{
         padding-top: 0;
     }
@@ -79,6 +90,9 @@
 
     .nav-logo{
         margin: 0 50px;
+    }
+    .nav-link{
+        font-size: 18px;
     }
 
     .nav-link::after{
@@ -96,7 +110,8 @@
         grid-template-columns: 1fr;
         text-align: center;
         place-items: center;
-        top: 200px;
+        margin-top: 100px;
+        gap: 50px;
     }
     .main-content{
         justify-content: center;
@@ -127,13 +142,17 @@
     }
 
     .caption{
-        left: 50px;
+        align-self: center;
     }
 
     /* destination */
     #destination{
         background-image: url(../starter-code/assets/destination/background-destination-tablet.jpg);
         height: 100%;
+    }
+
+    #destination-main{
+       margin-top: 70px;
     }
 
     .destination-body{
@@ -149,6 +168,7 @@
     .destination-content{
         justify-content: center;
         align-items: center;
+        gap: 30px;
     }
 } 
 
@@ -167,11 +187,10 @@
 
     main{
         width: 500px;
- 
     }
     .main-body{
-        top: 120px;
-        gap: 100px;
+        margin-top: 80px;
+        gap: 60px;
     }
     .navbar{
         z-index: 1000;
@@ -206,7 +225,7 @@
 
     .navbar.show .nav-item{
         visibility: visible;
-        opacity: 1;
+        opacity: 1; 
     }
     
     .nav-link{
@@ -220,6 +239,13 @@
     .nav-btn{
         display: grid;
         z-index: 1000000;
+    }
+    /* destination */
+    .destination-link{
+        font-size: 20px;
+    }
+    .destination-content{
+        gap: 40px;
     }
 }
 
@@ -254,7 +280,7 @@
 
     .main-body{
         gap: 50px;
-        top: 70px;
+        margin-top: 80px;
     }
 
     .main-content{
@@ -284,22 +310,24 @@
         height: 200px;
     }
 
-    .caption{
-        left: unset;
-        top: unset;
-        position: unset;
-        text-align: center;
-        margin-top: 40px;
-    }
 
     /* destination */
     #destination{
         background-image: url(../starter-code/assets/destination/background-destination-mobile.jpg);
     }
+
+    #destination-main{
+        margin-top: 45px;
+        gap: 40px;
+    }
+
     .destination-body{
         margin-top: 50px;
-        gap: 50px;
+        gap: 45px;
         padding-bottom: 55px;
+    }
+    .destination-content{
+        gap: 25px;
     }
 
     .destination-item{
