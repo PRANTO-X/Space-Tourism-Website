@@ -1,0 +1,74 @@
+#technology{
+    background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.tech-body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    margin-top: 70px;
+}
+
+.tech-content{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-right: 32px;
+}
+.tech-detail{
+    transition: opacity 0.5s ease-in-out;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.numbers span{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: var(--white);
+    font-family: var(--text-bellefair);
+    border: 1px solid rgb(255,255,255,0.25);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.numbers span.active{
+    border: none;
+    background: var(--white);
+    color: var(--secondary-color);
+}
+
+.numbers span:hover{
+    border-color: var(--white);
+}
+
+.tech-name{
+    font-family: var(--text-bellefair);
+    font-size: 56px;
+    margin-bottom: 24px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+#tech-img{
+    position: absolute;
+    width: 35%;
+    right: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#tech-img.hidden{
+    opacity: 0;
+}

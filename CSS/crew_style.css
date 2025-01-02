@@ -12,17 +12,19 @@
     grid-template-columns: 2fr 1fr;
     place-items: center;
     gap: 80px;
-    transition: opacity 0.5s ease-in-out;
 }
-.crew-body.hidden{
-    opacity: 0;
-}
+
 
 .crew-content{
     display: flex;
     flex-direction: column;
     gap: 200px;
 }
+
+.crew-detail{
+    transition: opacity 0.5s ease-in-out;
+}
+
 
 .role{
     font-size: 32px;
@@ -70,6 +72,9 @@
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
+    transition: opacity 0.5s ease-in-out;
 }
-
+#crew-image.hidden{
+    opacity: 0;
+}
   
